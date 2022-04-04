@@ -1,10 +1,6 @@
 /****************************/
 /*     01. Section Home     */
 /****************************/
-*{
-    margin:0px;
-    padding: 0px;
-}
 section{
     position:fixed;
     width:100%;
