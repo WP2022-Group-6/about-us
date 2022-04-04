@@ -1,7 +1,83 @@
 /****************************/
 /*     01. Section Home     */
 /****************************/
+*{
+    margin:0px;
+    padding: 0px;
+}
+section{
+    position:fixed;
+    width:100%;
+    height:100%;
+}
+img#home_backgroundimg{
+    width:100%;
+    height: 100%;
+    z-index: 0;
+}
+.home_img img{
+    position: absolute;
+    z-index: 1;
+}
+.home_img img.home_choose{
+    width:15%;
+    height:30%;
+}
+.home_img img#home_meme{
+    left:13%;
+    top:10%;
+}
+.home_img img#home_freedom{
+    left:15%;
+    top:43%;
+    width:13%;
+    height:20%;
+}
+.home_img img#home_cat{
+    left:13%;
+    top:47%;
+    height: 60%;
+}
+.home_img img#home_liver{
+    right:13%;
+    top:22%;
+    height: 20%;
+}
+.home_img img#home_cheerful{
+    right:15%;
+    top:50%;
+    width:10%;
+    height:20%;
+}
+.home_img img#home_bowl{
+    width:20%;
+    height:38%;
+    top:60%;
+    left:42%;
+    z-index: 2;
+}
+.home_img img#home_magician{
+    width:77%;
+    height:190%;
+    top:-60%;
+    left:15%;
+}
+.home_img img#home_smoke_left{
+    width:50%;
+    height: 55%;
+    top:35%;
+    left:40%;
+    z-index: 5;
 
+}
+.home_img img#home_smoke_right{
+    transform: rotateY(180deg); 
+    width:35%;
+    height: 35%;
+    top:50%;
+    right:40%;
+    z-index: 5;
+}
 
 
 /************************************/
