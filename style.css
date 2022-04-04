@@ -71,6 +71,39 @@ body {
     top: 59%;
     right: 40%;
 }
+[draggable="true"] {
+  /*
+   To prevent user selecting inside the drag source
+  */
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+#drag-drop-basic {
+    display: flex;
+}
+#source-container {
+        height: 60vh;
+		width:80vw;
+        /*border: 2px solid #CCC;*/  /* help me see where the border is */
+        flex: 1;
+        margin: 1rem;
+		position: fixed;
+		left:10vw;
+		top:10vh;
+}
+
+#target-container {
+        height:20vh;
+		width:18vw;
+        /*border: 2px solid #CCC;*/  /* help me see where the border is */
+        flex: 1;
+        margin: 1rem;
+		position: fixed;
+		left:42vw;
+		top:75vh;
+}
 
 /************************************/
 /*     02. Section Pserson Base     */
