@@ -84,14 +84,15 @@ body {
     display: flex;
 }
 #source-container {
-        height: 60vh;
-		width:80vw;
+        height: 102vh;
+		width:102vw;
         /*border: 2px solid #CCC;*/  /* help me see where the border is */
         flex: 1;
         margin: 1rem;
 		position: fixed;
-		left:10vw;
-		top:10vh;
+		left:-1vw;
+		top:-2vh;
+		
 }
 
 #target-container {
