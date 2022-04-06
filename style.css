@@ -66,6 +66,11 @@ body {
     height: 70%;
     transform: translateX(-60%) translateY(-100%);
 }
+#home_arrow{
+    top:53%;
+    left:54%;
+    height: 25%;
+}
 
 @media only screen and (max-width: 1300px) {
     #home_meme {
@@ -96,6 +101,9 @@ body {
     #home_magician {
         width: 35%;
         height: auto;
+    }
+    #home_arrow{
+        width:10%;
     }
 }
 
