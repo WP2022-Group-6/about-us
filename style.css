@@ -19,58 +19,110 @@ body {
 }
 
 #home_meme {
-    left: 13%;
-    top: 10%;
+    left: 25%;
+    top: 17.5%;
+    height: 25%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 #home_freedom {
     left: 15%;
-    top: 43%;
-    width: 13%;
+    top: 45%;
+    height: 25%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 #home_cat {
-    left: 13%;
-    top: 47%;
-    height: 70%;
+    left: 20%;
+    top: 72.5%;
+    height: 25%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 #home_liver {
-    right: 13%;
-    top: 22%;
+    right: 20%;
+    top: 20%;
+    height: 25%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
-#home_cheerful {
-    right: 15%;
+#home_workhard {
+    right: 10%;
     top: 50%;
-    width: 10%;
+    height: 25%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 #home_bowl {
+    top: 80%;
+    left: 50%;
     width: 20%;
-    top: 65%;
-    left: 42%;
+    transform: translateX(-50%) translateY(-40%);
 }
 
 #home_magician {
-    width: 60%;
-    top: -77%;
-    left: 23%;
+    top: 80%;
+    left: 50%;
+    height: 70%;
+    transform: translateX(-60%) translateY(-100%);
+}
+#home_arrow{
+    top:77.5%;
+    left:54%;
+    height: 20%;
+    transform: translateY(-90%);
+}
+
+@media only screen and (max-width: 1300px) {
+    #home_meme {
+        width: 10%;
+        height: auto;
+    }
+    
+    #home_freedom {
+        width: 10%;
+        height: auto;
+    }
+    
+    #home_cat {
+        width: 10%;
+        height: auto;
+    }
+    
+    #home_liver {
+        width: 10%;
+        height: auto;
+    }
+    
+    #home_workhard {
+        width: 10%;
+        height: auto;
+    }
+
+    #home_magician {
+        width: 35%;
+        height: auto;
+    }
+    #home_arrow{
+        width:10%;
+        height: auto;
+    }
 }
 
 #home_smoke_left {
+    top: 80%;
+    left: 50%;
     width: 50%;
-    top: 46%;
-    left: 40%;
+    transform: translateX(-95%) translateY(-80%);
 }
 
 #home_smoke_right {
-    transform: rotateY(180deg);
-    width: 35%;
-    height: 35%;
-    top: 59%;
-    right: 40%;
+    top: 80%;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-5%) translateY(-80%);
 }
+
 [draggable="true"] {
   /*
    To prevent user selecting inside the drag source
@@ -80,9 +132,11 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+
 #drag-drop-basic {
     display: flex;
 }
+
 #source-container {
         height: 60vh;
 		width:80vw;
