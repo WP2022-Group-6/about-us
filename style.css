@@ -67,9 +67,10 @@ body {
     transform: translateX(-60%) translateY(-100%);
 }
 #home_arrow{
-    top:53%;
+    top:77.5%;
     left:54%;
-    height: 25%;
+    height: 20%;
+    transform: translateY(-90%);
 }
 
 @media only screen and (max-width: 1300px) {
@@ -104,6 +105,7 @@ body {
     }
     #home_arrow{
         width:10%;
+        height: auto;
     }
 }
 
