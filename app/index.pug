@@ -12,7 +12,8 @@ html
     link(href="https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet")
 
     // Customized CSS
-    link(href="style.css" rel="stylesheet")
+    link(href="style.sass" rel="stylesheet")
+
   body
     section#home
       img#home_magician(src="../image/magician.png" alt="magician")
@@ -28,7 +29,11 @@ html
 
     section#person-base.transition.hidden
       img#person-base-bowl(src="../image/bowl.png" alt="bowl")
-      img#person-base-img(src="../image/mamamaxinz.png" alt="mamamaxinz")
+      img#hsuanya.person-base-img.transition.hidden(src="../image/hsuanya.png" alr="hsuanya")
+      img#MikazukiHikari.person-base-img.transition.hidden(src="../image/MikazukiHikari.png" alt="MikazukiHikari")
+      img#mamamaxinz.person-base-img.transition.hidden(src="../image/mamamaxinz.png" alt="mamamaxinz")
+      img#Jench2103.person-base-img.transition.hidden(src="../image/Jench2103.png" alt="Jench2103")
+      img#JeffYaCheng.person-base-img.transition.hidden(src="../image/JeffYaCheng.png" alt="JeffYaCheng")
       img#person-base-smoke-left(src="../image/smoke-left-home.png" alt="smokeleft")
       img#person-base-smoke-right(src="../image/smoke.png" alt="smokeright")
       i#person-base-icon.massive.angle.left.icon
@@ -46,4 +51,4 @@ html
   script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
   script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
   script(src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js")
-  script(src="../index.js")
+  script(src="index.js")
