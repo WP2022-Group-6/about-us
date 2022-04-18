@@ -10,8 +10,11 @@ indent_size = 4
 end_of_line = lf
 insert_final_newline = true
 
-[**.html]
+[**.{html,pug}]
 indent_size = 2
+
+[**.json]
+insert_final_newline = false
 
 [**.{min,min.js,min.js.map,min.css,min.css.map}]
 indent_style = ignore

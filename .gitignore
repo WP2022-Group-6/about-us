@@ -1,1 +1,12 @@
+### VSCode ###
 .vscode/
+
+### Parcel ###
+.cache/
+dist/
+
+### Node.js ###
+node_modules/
+
+### Yarn ###
+yarn.lock

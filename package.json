@@ -1,0 +1,32 @@
+{
+    "name": "about-us",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build": "parcel build app/index.pug --out-dir dist/ --public-url ./",
+        "watch": "parcel watch app/index.pug --out-dir dist/ --public-url ./",
+        "clean": "rm -r dist/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/WP2022-Group-6/about-us.git"
+    },
+    "keywords": [],
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/WP2022-Group-6/about-us/issues"
+    },
+    "homepage": "https://github.com/WP2022-Group-6/about-us#readme",
+    "dependencies": {
+        "jquery": "^3.6.0",
+        "parcel": "^2.4.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.0",
+        "@parcel/transformer-pug": "2.4.1",
+        "@parcel/transformer-sass": "2.4.1",
+        "node-sass": "^7.0.1",
+        "parcel-bundler": "^1.12.5",
+        "pug-cli": "^1.0.0-alpha6"
+    }
+}
