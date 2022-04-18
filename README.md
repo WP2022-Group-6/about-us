@@ -1,8 +1,8 @@
 # About Us - WP2022 Group 6
-Welcome to visit our webpage at [here](https://luffy.ee.ncku.edu.tw/~jench2103/about-us/index.html).
+Welcome to visit our webpage [here](https://luffy.ee.ncku.edu.tw/~jench2103/groupsix/about-us/index.html).
 
 ## Usage
-- Initialize the dependencies of the project.
+- Initialize the dependent packages of the project.
     ```shell
     $ yarn
     ```
@@ -10,18 +10,18 @@ Welcome to visit our webpage at [here](https://luffy.ee.ncku.edu.tw/~jench2103/a
     ```shell
     $ npm run build
     ```
-- Start hot reloading for development.
+- Start hot reloading for `.pug` and `.sass` files for development. Stop with `ctrl + c`.
     ```shell
     $ npm run watch
     ```
-- Remove all files built automatically.
+- Remove all of the files built by automation tools.
     ```shell
     $ npm run clean
     ```
 
 ## Project structure
 ```
-about-us
+about-us/
     ├── app/                # source code (.pug, .sass, and .js)
     ├── image/
     ├── dist/               # generated automatically by parcel
@@ -29,7 +29,7 @@ about-us
     └── package.json        # npm configuration with dependency list
 ```
 
-## Team member
+## Team members
 | Member                                               | Role     |
 | ---------------------------------------------------- | -------- |
 | [@Jench2103](https://github.com/Jench2103)           | Engineer |
