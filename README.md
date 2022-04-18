@@ -30,10 +30,10 @@ about-us
 ```
 
 ## Team member
-| Member          | Role     |
-| --------------- | -------- |
-| @Jench2103      | Engineer |
-| @hsuanya        | Engineer |
-| @JeffYaCheng    | Engineer |
-| @MikazukiHikari | Engineer |
-| @Mamamaxinz     | Designer |
+| Member                                               | Role     |
+| ---------------------------------------------------- | -------- |
+| [@Jench2103](https://github.com/Jench2103)           | Engineer |
+| [@hsuanya](https://github.com/hsuanya)               | Engineer |
+| [@JeffYaCheng](https://github.com/JeffYaCheng)       | Engineer |
+| [@MikazukiHikari](https://github.com/MikazukiHikari) | Engineer |
+| [@Mamamaxinz](https://github.com/Mamamaxinz)         | Designer |
