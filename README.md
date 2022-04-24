@@ -18,6 +18,10 @@ Welcome to visit our webpage [here](https://luffy.ee.ncku.edu.tw/~jench2103/grou
     ```shell
     $ npm run clean
     ```
+- Deploy the latest version to github.io (in branch `main` only).
+    ```shell
+    $ bash deploy-githubio
+    ```
 
 ## Project structure
 ```

@@ -1,0 +1,29 @@
+#!bin/bash -e
+
+cd $(dirname "$0")
+
+GIT_BRANCH=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+GIT_COMMIT_ID="$(git rev-parse --short HEAD)"
+GITHUBIO_SOURCE_BRANCH="main"
+GITHUBIO_TARGET_BRANCH="gh-pages"
+
+[[ ${GIT_BRANCH} != ${GITHUBIO_SOURCE_BRANCH} ]] \
+    && echo -e "Please switch to branch '${GITHUBIO_SOURCE_BRANCH}' first.\n" \
+    && exit 1
+
+git checkout ${GITHUBIO_TARGET_BRANCH} > /dev/null 2>&1
+
+if [[ $(cat ".nojekyll") != ${GIT_COMMIT_ID} ]]; then
+    git merge ${GITHUBIO_SOURCE_BRANCH}
+    ${GIT_COMMIT_ID} > ".nojekyll"
+    rm dist/*
+    npm run build > /dev/null 2>&1
+    git add -f --all "dist/"
+    git add ".nojekyll"
+    git commit -m "Deploy ${GIT_COMMIT_ID} on github.io" > /dev/null 2>&1
+    git push
+else
+    echo -e "The github.io page is up to date.\n"
+fi
+
+git checkout ${GITHUBIO_SOURCE_BRANCH} > /dev/null 2>&1
