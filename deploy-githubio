@@ -15,7 +15,7 @@ git checkout ${GITHUBIO_TARGET_BRANCH} > /dev/null 2>&1
 
 if [[ $(cat ".nojekyll") != ${GIT_COMMIT_ID} ]]; then
     git merge ${GITHUBIO_SOURCE_BRANCH}
-    ${GIT_COMMIT_ID} > ".nojekyll"
+    echo ${GIT_COMMIT_ID} > ".nojekyll"
     rm dist/*
     npm run build > /dev/null 2>&1
     git add -f --all "dist/"
@@ -27,3 +27,4 @@ else
 fi
 
 git checkout ${GITHUBIO_SOURCE_BRANCH} > /dev/null 2>&1
+
